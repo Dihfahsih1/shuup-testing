@@ -13,6 +13,7 @@ login_attempt.submit()
 
 element = browser.find_element(By.TAG_NAME,'h1')
 if element.text == 'Welcome!':
-    print("Landing page Passed the test")
+    print("Test was successful")
+    print("logged in successfully")
 else:
-    print("Fail")
+    print("Login failed")

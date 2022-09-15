@@ -19,3 +19,17 @@ if element.text == 'New order':
     print("Pass")
 else:
     print("Fail")
+    
+    
+# try:
+#     login_attempt = browser.find_element(By.XPATH,"//*[@type='Submit']")
+#     login_attempt.submit()
+#     browser.get("http://127.0.0.1:8000/sa/orders/new/") 
+# except Exception as e:
+#     print(e)
+
+# element = browser.find_element(By.TAG_NAME,'h1')
+# if element.text == 'New order':
+#     print("Pass")
+# else:
+#     print("Fail")

@@ -14,5 +14,11 @@ login_attempt = browser.find_element(By.XPATH,"//*[@type='submit']")
 login_attempt.submit()
 browser.get("http://127.0.0.1:8000/sa/service_provider/new/") 
 time.sleep(1)
-browser.find_element(By.XPATH,"//*[@id='id_name__en']").send_keys('DFX')
+browser.find_element(By.XPATH,"//*[@id='id_name__en']").send_keys('Moore-Provider')
 browser.find_element(By.XPATH,"/html/body/div[1]/div[2]/div/div/div/form/div/div/button[1]").click()
+
+if browser:
+  print("the test was successful")
+else:
+  print("Test Failed")
+browser.quit()
